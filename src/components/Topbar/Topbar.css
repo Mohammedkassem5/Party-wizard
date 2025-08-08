@@ -1,0 +1,90 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.topbar .menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  display: none;
+}
+
+.topbar .search {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.topbar .topbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+
+}
+
+.topbar .user-info {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.icon-box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #f66320;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #f66320;
+  cursor: pointer;
+  transition: all 0.2s ease;
+    top: 15px;    
+  left: -11px; 
+}
+
+.icon-box:hover {
+  box-shadow: 0 4px 10px rgba(246, 99, 32, 0.2);
+}
+
+.icon-box.highlight {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+.icon-box .icon {
+  font-size: 18px;
+}
+
+.icon-box .count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #f66320;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .topbar .menu-btn {
+    display: block;
+  }
+  .topbar .search {
+    max-width: 150px;
+  }
+}

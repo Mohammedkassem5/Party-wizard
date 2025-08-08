@@ -1,0 +1,57 @@
+.notifications-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+  gap: 15px;
+}
+
+.notification-card .icon {
+  font-size: 22px;
+}
+
+.notification-card.success .icon { color: #28a745; }
+.notification-card.warning .icon { color: #f0ad4e; }
+.notification-card.error .icon { color: #dc3545; }
+
+.notification-card .text h4 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.notification-card .text p {
+  font-size: 14px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+.notification-card .close-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .notifications-page {
+    padding: 15px;
+  }
+  .notification-card {
+    flex-direction: row;
+  }
+}
